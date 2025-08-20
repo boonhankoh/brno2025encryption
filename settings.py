@@ -2,19 +2,12 @@ from os import environ
 
 SESSION_CONFIGS = [
     dict(
-        name="splash_demo",
+        name="encryption",
         app_sequence=[
-            "splash"
+            "encryption",
         ],
-        num_demo_participants=3,
-    ),
-    dict(
-        name="quiz_demo",
-        app_sequence=[
-            "quiz"
-        ],
-        num_demo_participants=3,
-    ),
+        num_demo_participants=2,
+    )
 ]
 
 # if you set a property in SESSION_CONFIG_DEFAULTS, it will be inherited by all configs
