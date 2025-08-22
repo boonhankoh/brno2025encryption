@@ -75,6 +75,8 @@ class Player(BasePlayer):
 
     def check_response(self):
         self.is_correct = self.response == self.subsession.correct_response
+        if self.is_correct:
+            self.payoff = self.subsession.payment_per_correct
 
 
 def creating_session(subsession):
